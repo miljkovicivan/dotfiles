@@ -96,3 +96,5 @@ alias s="git status"
 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+eval $(thefuck --alias)
