@@ -99,3 +99,9 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 eval $(thefuck --alias)
+export PATH="/usr/local/opt/postgresql@9.4/bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+alias cdsource="cd ~/projects/GreyLabel && source .env/bin/activate"
