@@ -60,6 +60,7 @@ ZSH_THEME="frisk"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
