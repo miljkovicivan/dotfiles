@@ -33,3 +33,6 @@ colorscheme monokai
 set number
 
 let g:ag_working_path_mode="r"
+
+noremap j gj
+noremap k gk
