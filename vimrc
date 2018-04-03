@@ -16,6 +16,9 @@ Plugin 'ekalinin/Dockerfile.vim'
 "Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'elzr/vim-json'
 Plugin 'rking/ag.vim'
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 
 call vundle#end()            " required
@@ -36,3 +39,7 @@ let g:ag_working_path_mode="r"
 
 noremap j gj
 noremap k gk
+
+nnoremap <space> za
+let g:SimpylFold_docstring_preview=1
+set laststatus=2
