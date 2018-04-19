@@ -19,6 +19,8 @@ Plugin 'rking/ag.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+"Plugin 'davidhalter/jedi-vim'
+"Plugin 'junegunn/fzf.vim'
 
 
 call vundle#end()            " required
@@ -43,3 +45,7 @@ noremap k gk
 nnoremap <space> za
 let g:SimpylFold_docstring_preview=1
 set laststatus=2
+
+set rtp+=/usr/local/opt/fzf
+
+let g:ctrlp_custom_ignore = 'node_modules'
