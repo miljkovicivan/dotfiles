@@ -105,3 +105,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias cdsource="cd ~/projects/GreyLabel && source .env/bin/activate"
+
+alias chrome="open -a \"Google Chrome\""
+alias ports="sudo lsof -PiTCP -sTCP:LISTEN"
+alias fim="vim \$(fzf)"
