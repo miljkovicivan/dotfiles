@@ -95,8 +95,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias s="git status"
 
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 eval $(thefuck --alias)
 export PATH="/usr/local/opt/postgresql@9.4/bin:$PATH"
@@ -104,8 +102,14 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-alias cdsource="cd ~/projects/GreyLabel && source .env/bin/activate"
-
 alias chrome="open -a \"Google Chrome\""
 alias ports="sudo lsof -PiTCP -sTCP:LISTEN"
 alias fim="vim \$(fzf)"
+alias flake8="flake8 --exclude migrations,settings*"
+
+export PATH="/usr/local/opt/libressl/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:${PATH}"
+
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
